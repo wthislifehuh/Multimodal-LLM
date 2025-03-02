@@ -1,5 +1,8 @@
 import base64
 from gradio_client import Client, handle_file
+import time
+
+start_time = time.time()
 
 client = Client("lintasmediadanawa/llava-test")
 result = client.predict(
@@ -8,3 +11,6 @@ result = client.predict(
 		api_name="/predict"
 )
 print(result)
+
+end_time = time.time()
+print(f"Time taken: {end_time - start_time} seconds")
