@@ -6,11 +6,12 @@ start_time = time.time()
 
 client = Client("lintasmediadanawa/llava-test")
 result = client.predict(
-		prompt="Hello!!",
-		image=handle_file('https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png'),
+		prompt="What is in the image?",
+		image=handle_file('./image.png'),
 		api_name="/predict"
 )
 print(result)
 
 end_time = time.time()
 print(f"Time taken: {end_time - start_time} seconds")
+# 80 - 90 seconds per image processing
