@@ -139,7 +139,7 @@ class ParcelDataExtractor:
 
 
 # Example Usage
-api_key = "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"
+api_key = ""
 image_path = "./assets/waybill2.png"
 model_name = "gpt-4o-2024-08-06"
 

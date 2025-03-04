@@ -1,3 +1,8 @@
+# This script is used to extract data from an image using PaddleOCR and GPT-4o.
+# It extracts text and bounding box coordinates from an image using PaddleOCR.
+# It then uses GPT-4o to identify key-value pairs and merge their coordinates.
+# It then visualizes the results using OpenCV.
+
 import time
 import json
 import requests
@@ -122,7 +127,7 @@ class ParcelDataExtractor:
 
 
 # Example Usage
-api_key = "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"
+api_key = ""
 image_path = "./assets/waybill.png"
 model_name = "gpt-4o-2024-08-06"
 
